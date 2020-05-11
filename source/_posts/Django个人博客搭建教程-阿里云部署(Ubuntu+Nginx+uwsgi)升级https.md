@@ -1,21 +1,21 @@
 ---
-title: Django个人博客搭建教程---阿里云部署（Ubuntu+Nginx+uwsgi）升级https
+title: Django个人博客搭建教程-阿里云部署(Ubuntu+Nginx+uwsgi)升级https
 date: 2019-11-24 16:20:40
 tags: [django, 阿里云, nginx, https]
 category: Django
 ---
 更安全的https
 <!-- more -->
-## 一、阿里云申请SSL证书
+#### 一、阿里云申请SSL证书
 略
 
-## 二、将pem和key放在nginx目录下
+#### 二、将pem和key放在nginx目录下
 仅供参考
 ```shell
 /etc/nginx/cert/1831344_www.guanacossj.com.pem;      # 路径/pem文件
 /etc/nginx/cert/1831344_www.guanacossj.com.key;      # 路径/key文件
 ```
-三、修改nginx.conf
+#### 三、修改nginx.conf
 ```shell
 http {
  
@@ -64,7 +64,7 @@ http {
 ```
 这里把你原来的监听80端口改为监听443端口即可，我之前一直不成功主要是我试图再加一个443端口的监听，应该也可以吧，不管了，反正这样肯定没问题，然后如果还想让http能购访问，就做个重定向。
 
-四、重启nginx
+#### 四、重启nginx
 ```shell
 service nginx restart
 ```

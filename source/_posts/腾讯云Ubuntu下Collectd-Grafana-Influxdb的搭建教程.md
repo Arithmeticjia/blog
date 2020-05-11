@@ -4,7 +4,7 @@ date: 2019-11-23 16:13:53
 tags: [grafana, collectd, influxdb]
 categories: Collectd
 ---
-本文介绍了腾讯云服务器Ubuntu下监控平台的搭建教程，主要组件分为三个部分，grafana、collectd、influxdb。grafana主要用来作为监控的前端展示，collectd负责采集服务器性能指标，influxdb则是一款开源的时序数据库，负责采集数据的存储。
+本文介绍了腾讯云服务器Ubuntu下监控平台的搭建教程，主要组件分为三个部分，grafana、collectd、influxdb。grafana主要用来作为监控的前端展示，collectd负责采集服务器性能指标，influxdb则是一款开源的时序数据库，负责采集数据的存储
 <!-- more -->
 ## 一、安装Collectd
 ### 1、安装

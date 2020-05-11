@@ -1,15 +1,17 @@
 ---
-title: Django个人博客搭建教程---REST风格API
+title: Django个人博客搭建教程-REST风格API
 date: 2019-11-24 16:03:17
 tags: [django, restframework]
 category: Django
 ---
-Django Rest Framework 是一个强大且灵活的工具包，用以构建Web API
+Django REST Framework 是一个强大且灵活的工具包，用以构建Web API
 Django REST Framework可以在Django的基础上迅速实现API，并且自身还带有WEB的测试页面，可以方便的测试自己的API
 <!--more-->
-### 一、安装依赖
-`pip3 install djangorestframework`
-### 二、在settings.py中添加应用
+#### 一、安装依赖
+```shell 
+pip3 install djangorestframework
+```
+#### 二、在settings.py中添加应用
 ```python
 INSTALLED_APPS = [
     ....
@@ -18,7 +20,7 @@ INSTALLED_APPS = [
     ....             # 后面是你的应用名称
 ]
 ```
-### 三、路由注册
+#### 三、路由注册
 子urls.py
 ```python
 from django.conf.urls import url,include
@@ -72,7 +74,7 @@ urlpatterns = [
     path('JiaBlog/', include('JiaBlog.urls', namespace="JiaBlog")),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 ```
-### 四、视图函数
+#### 四、视图函数
 ```python
 from rest_framework import serializers,viewsets
 from JiaBlog.models import Articles
@@ -89,7 +91,7 @@ class GetArticleInfo(viewsets.ModelViewSet):
     queryset = Articles.objects.all().order_by('-id')
     serializer_class = ArticlesSerializers
 ```
-### 五、数据模型
+#### 五、数据模型
 ```python
 class Articles(models.Model):
     id = models.AutoField(primary_key=True)                         # id
@@ -110,7 +112,7 @@ class Articles(models.Model):
     articlebodybrief = models.TextField(blank=True,null=True)
     last_edit_timestamp = models.DateTimeField(auto_now=True,verbose_name="更新时间",editable=True)
 ```
-### 效果
+#### 效果
 ```
 GET /JiaBlog/api/getarticleinfo/
 HTTP 200 OK

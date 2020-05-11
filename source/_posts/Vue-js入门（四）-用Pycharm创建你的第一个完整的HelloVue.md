@@ -1,19 +1,20 @@
 ---
 title: Vue.js入门（四）---用Pycharm创建你的第一个完整的HelloVue
 date: 2019-11-23 19:41:17
-tags:
+tags: [vue]
+category: Vue
 ---
-本文主要介绍了如何在Pycharm中构建一个简单的vue应用,摘要要写50个字，不然markdown格式会很丑，我也不知道要写啥，感觉没啥好写的，现在应该差不多了。
+本文主要介绍了如何在Pycharm中构建一个简单的vue应用,摘要要写50个字，不然markdown格式会很丑，我也不知道要写啥，感觉没啥好写的，现在应该差不多了
 <!-- more -->
-## 一、在Pycharm中下载Vue.js插件
-![](https://www.guanacossj.com//media/articlebodypics/1571819210811.jpg)
-## 二、新建一个Vue.js项目
-![](https://www.guanacossj.com//media/articlebodypics/1571819312914.jpg)
+#### 一、在Pycharm中下载Vue.js插件
+![](https://www.guanacossj.com/media/articlebodypics/1571819210811.jpg)
+#### 二、新建一个Vue.js项目
+![](https://www.guanacossj.com/media/articlebodypics/1571819312914.jpg)
 然后等待安装启动完成，这里提示我要不要用淘宝源，我果断同意啊
-## 三、项目启动
-![](https://www.guanacossj.com//media/articlebodypics/1571819476507.jpg)
-##  四、项目目录结构
-![](https://www.guanacossj.com//media/articlebodypics/1571819572736.jpg)
+#### 三、项目启动
+![](https://www.guanacossj.com/media/articlebodypics/1571819476507.jpg)
+####  四、项目目录结构
+![](https://www.guanacossj.com/media/articlebodypics/1571819572736.jpg)
 ``````
 '''
 -node_modules：项目的依赖
@@ -31,7 +32,7 @@ tags:
 -package.json   项目的依赖文件
 '''
 ``````
-##  五、修改默认的启动页
+####  五、修改默认的启动页
 在components下新建一个HelloVue
 ```html
 <template>
@@ -60,4 +61,4 @@ tags:
 import HelloWorld from './components/HelloVue.vue'
 ```
 效果图
-![](https://www.guanacossj.com//media/articlebodypics/1571819861870.jpg)
+![](https://www.guanacossj.com/media/articlebodypics/1571819861870.jpg)

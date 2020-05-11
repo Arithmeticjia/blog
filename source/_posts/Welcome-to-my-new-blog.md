@@ -2,6 +2,7 @@
 title: Welcome to my new blog
 date: 2019-11-23 12:55:54
 tags: blog
+category: Welcome
 ---
 欢迎来到我的博客，更多精彩请点进来
 <!-- more -->
